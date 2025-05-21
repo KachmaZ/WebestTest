@@ -1,9 +1,13 @@
 <template>
-  <RouterView />
+    <div>
+        list
+    </div>
 </template>
 
 <script setup lang="ts">
+
 </script>
 
-<style scoped lang="scss">
+<style scoped>
+
 </style>
