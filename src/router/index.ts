@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import TenderListView from "../views/TenderListView.vue";
-import TenderDetailView from "../views/TenderDetailView.vue";
+import TenderListView from "@/views/TenderListView.vue";
+import TenderDetailView from "@/views/TenderDetailView.vue";
 
 export default createRouter({
   history: createWebHistory(),
