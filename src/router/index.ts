@@ -6,6 +6,6 @@ export default createRouter({
   history: createWebHistory(),
   routes: [
     { name: 'TenderList',path: '/', component: TenderListView },
-    { name: 'TenderDetail', path: '/tender/:id', component: TenderDetailView },
+    { name: 'TenderDetail', path: '/tender/:id', component: TenderDetailView, props: true },
   ],
 });
