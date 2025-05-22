@@ -4,6 +4,8 @@ const BASE_URL = 'https://api.test-webest.ru';
 
 export async function fetchTenders(page = 1): Promise<TenderListResponse> {
   try {
+    console.log(page);
+    
     const response = await fetch(`${BASE_URL}/list/?page=${page}`);
     if (!response.ok) throw new Error('Ошибка при загрузке тендеров');
     
@@ -17,7 +19,7 @@ export async function fetchTenders(page = 1): Promise<TenderListResponse> {
   }
 }
 
-export async function fetchTenderById(id: number): Promise<TenderDetailResponse> {
+export async function fetchTenderById(id: string): Promise<TenderDetailResponse> {
   try {
     const response = await fetch(`${BASE_URL}/element/?id=${id}`);
     if (!response.ok) throw new Error('Ошибка при загрузке тендера');

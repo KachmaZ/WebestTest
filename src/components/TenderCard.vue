@@ -15,6 +15,7 @@ defineProps<{
 
 <style scoped lang="scss">
 .tender-card {
+  max-height: 500px;
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 8px;
